@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+header {
+    font-family:'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1.5rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+}
+.container div img {
+    width: 34rem;
+}
+.container div > p:nth-child(1){
+    /* width: 32rem; */
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Space Mono';
+}
+.container div > p:nth-child(2){
+    /* width: 26rem; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    font-family: 'Space Mono';
+    margin: 2.2rem auto 4rem 0rem;
+}
+button {
+    background-color: #333333;
+    color: white;
+    padding: 1rem 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+}
+footer {
+    margin-top: 6rem;
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .container div img {
+        width: 20rem;
+    }
+
+    .container div > p:nth-child(1){
+        /* width: 25rem; */
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: 'Space Mono';
+        letter-spacing: -3.5%;
+    }
+
+    .container div > p:nth-child(2){
+        /* width: 22rem; */
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 2rem;
+        font-family: 'Space Mono';
+    }
+    .container div:nth-child(2) {
+        padding: 0rem 1rem 0 1rem;
+    }
+    footer {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+}
